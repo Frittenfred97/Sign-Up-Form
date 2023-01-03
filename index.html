@@ -5,53 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-Up Form</title>
-    <link rel="stylesheet" href="./custom-style.css">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="./custom-style.css">
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   </head>
   <body>
     <div class="container-fluid p-0">
       <div class="row g-0">
         <div class="col-4 vh-100 overflow-hidden bg-img">
-          <div class="align-items-center justify-content-center d-flex position-relative top-50 translate-middle-y bg-dark bg-opacity-50">
+          <div class="align-items-center justify-content-center d-flex position-relative top-50 translate-middle-y bg-dark bg-opacity-50 text-center">
             <div>     
                  <img src="./img/Slice_Logo_final_icon.svg" style="height: 5em; width: auto;" alt="random image"></div>  
-                 <p class="text-white" style="font-size: 4em;">Sign-Up Form</p>
+                 <span class="text-white" style="font-size: 4em;">Sign-Up Form</span>
           </div>
         </div>
         <div class="col-8 align-self-end vh-100">
-          <div class="bg-black">
-            <p class="h5">This is not a real online service! You know you need something like 
-              this in your life to help you realize your deepest dreams.
-            </p>
-            <p class="h5">Sign up now to get Started</p>
+          <div class="h-33 position-relative">
+            <div class="position-absolute ">
+              <span class="fs-4">This is not a real online service! You know you need something<br/> like 
+                this in your life to help you realize your deepest dreams.<br/>
+              </span>
+              <span class="fs-4">Sign up now to get Started</span>
+            </div>
           </div>
-          <div>
-            <form action="" method="post">
-              <div>
-                <label for="firstName" class="">First Name:</label>
-                <input type="name">
-                <label for="lastName">Last Name:</label>
-                <input type="name">
-              </div>
-              <div>
-                <label for="email">Email Adress:</label>
-                <input type="email">
-                <label for="phone">Phone Number:</label>
-                <input type="number">
-              </div>
-              <div>
-                <label for="password">Password:</label>
-                <input type="password">
-                <label for="confirm-pasword">Confirm Password:</label>
-                <input type="password">
-              </div>
-            </form>
+          <div class="h-33 d-flex flex-column align-items-center justify-content-center shadow p-3 mb-5 bg-body">
+              <h4 class="">Let's do this!</h4>
+                <form>
+                  <div class="row">
+                    <div class="col">
+                      <label for="firstName" class="form-label">First Name:</label>
+                      <input type="name" class="form-control" id="firstname">
+                    </div>
+                    <div class="col">
+                      <label for="lastName" class="form-label">Last Name:</label>
+                      <input type="name" class="form-control">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <label for="email" class="form-label">Email Adress:</label>
+                      <input type="email" class="form-control">
+                    </div>
+                    <div class="col">
+                      <label for="phone" class="form-label">Phone Number:</label>
+                      <input type="number" class="form-control">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <label for="password" class="form-label">Password:</label>
+                      <input type="password" class="form-control">
+                    </div>
+                    <div class="col">
+                      <label for="confirm-pasword" class="form-label">Confirm Password:</label>
+                      <input type="password" class="form-control">
+                    </div>
+                  </div>
+                  </form>
+            </div>
           </div>
-          <div>
-            <button class="btn-primary">Sign-Up!</button>
+          <div class="d-grid ms-2 col-2">
+            <button class="btn btn-primary fs-5" type="submit">Sign-Up!</button>
           </div>
-          <div>
+          <div class="">
             <p>Already have an account? <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> Log in!</a></p>
           </div>
         </div>

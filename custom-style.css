@@ -2,3 +2,7 @@
     background-image: url('https://picsum.photos/800/1200');
     color: black;
 }
+
+.h-33 {
+    height: 33%;
+}

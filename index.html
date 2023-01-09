@@ -13,7 +13,8 @@
     <div class="container-fluid p-0">
       <div class="row g-0">
         <div class="col-4 vh-100 overflow-hidden bg-img">
-          <div class="align-items-center justify-content-center d-flex position-relative top-50 translate-middle-y bg-dark bg-opacity-50 text-center">
+          <div class="align-items-center justify-content-center d-flex position-relative 
+          top-50 translate-middle-y bg-dark bg-opacity-50 text-center">
             <div>     
                  <img src="./img/Slice_Logo_final_icon.svg" style="height: 5em; width: auto;" alt="random image"></div>  
                  <span class="text-white" style="font-size: 4em;">Sign-Up Form</span>
@@ -21,57 +22,63 @@
         </div>
         <div class="col-8 align-self-end vh-100">
           <div class="h-33 position-relative">
-            <div class="position-absolute ">
-              <span class="fs-4">This is not a real online service! You know you need something<br/> like 
+            <div class="position-absolute bottom-0 start-0 d-grid gap- ms-4 mb-4">
+              <p class="fs-4 fw-bold">This is not a real online service! You know you need something<br/> like 
                 this in your life to help you realize your deepest dreams.<br/>
-              </span>
-              <span class="fs-4">Sign up now to get Started</span>
+                Sign up <i>now</i> to get Started!
+              </p>
+              <p class="fs-4 fw-bold">You <i>know</i> you want it.</p>
             </div>
           </div>
-          <div class="h-33 d-flex flex-column align-items-center justify-content-center shadow p-3 mb-5 bg-body">
-              <h4 class="">Let's do this!</h4>
-                <form>
+          <div class="h-33 d-flex flex-column  justify-content-center shadow p-3 mb-2 bg-body">
+            <div>
+              <h5 class="flex-shrink-1">Let's do this!</h5>
+                <form class="flex-shrink-1">
                   <div class="row">
                     <div class="col">
-                      <label for="firstName" class="form-label">First Name:</label>
-                      <input type="name" class="form-control" id="firstname">
+                      <label for="firstName" class="form-label">*First Name:</label>
+                      <input type="name" class="form-control" id="firstname" required>
                     </div>
                     <div class="col">
-                      <label for="lastName" class="form-label">Last Name:</label>
-                      <input type="name" class="form-control">
+                      <label for="lastName" class="form-label">*Last Name:</label>
+                      <input type="name" class="form-control" required>
                     </div>
                   </div>
                   <div class="row">
                     <div class="col">
-                      <label for="email" class="form-label">Email Adress:</label>
-                      <input type="email" class="form-control">
+                      <label for="email" class="form-label">*Email Adress:</label>
+                      <input type="email" class="form-control" required>
                     </div>
                     <div class="col">
-                      <label for="phone" class="form-label">Phone Number:</label>
-                      <input type="number" class="form-control">
+                      <label for="phone" class="form-label">*Phone Number:</label>
+                      <input type="text" class="form-control" minlength="9" maxlength="15" required>
                     </div>
                   </div>
                   <div class="row">
                     <div class="col">
-                      <label for="password" class="form-label">Password:</label>
-                      <input type="password" class="form-control">
+                      <label for="password" class="form-label">*Password:</label>
+                      <input type="password" class="form-control" required>
                     </div>
                     <div class="col">
-                      <label for="confirm-pasword" class="form-label">Confirm Password:</label>
-                      <input type="password" class="form-control">
+                      <label for="confirm-pasword" class="form-label">*Confirm Password:</label>
+                      <input type="password" class="form-control" required>
                     </div>
                   </div>
                   </form>
+              </div>
+            </div>
+            <div class="h-33 position-relative mt-4 ms-4">
+              <div class="d-grid gap-2 col-2">
+                <button class="btn btn-primary fs-5" id="btn-party" type="submit">Sign-Up!</button>
+              </div>
+            <div class="mt-4">
+              <p>Already have an account? <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> Log in!</a></p>
             </div>
           </div>
-          <div class="d-grid ms-2 col-2">
-            <button class="btn btn-primary fs-5" type="submit">Sign-Up!</button>
-          </div>
-          <div class="">
-            <p>Already have an account? <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> Log in!</a></p>
           </div>
         </div>
       </div>
     </div>
   </body>
+  <script type="module" src="./script.js"></script>
 </html>
